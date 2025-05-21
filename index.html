@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Event Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Event Showcase</h1>
+        <p>Explore different JavaScript events and interactions</p>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section id="event-section">
+            <h2>Event Handling 🎈</h2>
+            <div class="card">
+                <h3>Button Click & Hover Effects</h3>
+                <button id="color-button" class="interactive-button">Change My Color</button>
+                <p id="click-output">Click the button above to see what happens!</p>
+                <div id="hover-area" class="hover-demo">
+                    <p>Hover over me!</p>
+                </div>
+                <p><small>Psst! Try double-clicking the button for a surprise! 🤫</small></p>
+            </div>
+
+            <div class="card">
+                <h3>Keypress Detection</h3>
+                <div id="key-display" class="key-container">
+                    <p>Press any key on your keyboard</p>
+                    <div id="key-info">
+                        <span id="key-name">-</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-section">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <!-- Image Gallery -->
+            <div class="card">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <div class="gallery-main">
+                        <img id="current-image" src="https://via.placeholder.com/600x300/3498db/ffffff?text=Image+1" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-nav">
+                        <button id="prev-btn">Previous</button>
+                        <button id="next-btn">Next</button>
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img class="thumb active" src="https://via.placeholder.com/600x300/3498db/ffffff?text=Image+1" alt="Thumbnail 1" data-index="0">
+                        <img class="thumb" src="https://via.placeholder.com/600x300/e74c3c/ffffff?text=Image+2" alt="Thumbnail 2" data-index="1">
+                        <img class="thumb" src="https://via.placeholder.com/600x300/2ecc71/ffffff?text=Image+3" alt="Thumbnail 3" data-index="2">
+                        <img class="thumb" src="https://via.placeholder.com/600x300/f39c12/ffffff?text=Image+4" alt="Thumbnail 4" data-index="3">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="card">
+                <h3>Content Tabs</h3>
+                <div class="tabs-container">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <h4>Tab 1 Content</h4>
+                            <p>This is the content for the first tab. It demonstrates tab functionality using JavaScript.</p>
+                        </div>
+                        <div id="tab2" class="tab-pane">
+                            <h4>Tab 2 Content</h4>
+                            <p>This is the content for the second tab. Click on different tabs to switch content!</p>
+                        </div>
+                        <div id="tab3" class="tab-pane">
+                            <h4>Tab 3 Content</h4>
+                            <p>This is the content for the third tab. Each tab has its own unique content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-section">
+            <h2>Form Validation 📋✅</h2>
+            <div class="card">
+                <form id="validation-form">
+                    <div class="form-group">
+                        <label for="username">Username <span class="required">*</span></label>
+                        <input type="text" id="username" placeholder="Enter your username">
+                        <span class="validation-message" id="username-validation"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <span class="validation-message" id="email-validation"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                        <span class="validation-message" id="password-validation"></span>
+                    </div>
+                    
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <div class="strength-bar" id="strength-bar"></div>
+                        </div>
+                        <span id="strength-text">Password strength</span>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript Event Assignment &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
